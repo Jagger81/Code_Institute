@@ -3,6 +3,7 @@
 <head>
 	<title>Container Test</title>
 	<style type="text/css">
+
 	
 	#container {
 		margin-right: auto;
@@ -94,6 +95,27 @@
     #linkToTop{
          display: inline-block;
     }
+
+    @media screen and (max-width: 600px){   /* width for screen less than 600px */
+        			
+           			 #sidebar, #content{
+		                   text-align: left;
+		          		   background-color:#eee;
+		          		   border-color: white;
+ 
+		              
+           			 }
+           			}
+           			@media screen and (min-width: 1000px){   /* width for screen over 1000px */
+        			
+           			 #sidebar, #content{
+		                   
+		          		  color: white;
+		          		  border-color: white;
+ 
+		              
+           			 }
+           			}
 
 	</style>
 
