@@ -5,6 +5,7 @@
 	<style type="text/css">
 
 	
+
 	#container {
 		margin-right: auto;
         margin-left: auto;
@@ -97,25 +98,42 @@
     }
 
     @media screen and (max-width: 600px){   /* width for screen less than 600px */
-        			
-           			 #sidebar, #content{
-		                   text-align: left;
-		          		   background-color:#eee;
-		          		   border-color: white;
+                    
+                     #sidebar, #content{
+                           text-align: left;
+                           background-color:#eee;
+                           border-color: white;
+                            }
+
+                    p::first-line {
+                        font-size:1.5em;
+                    }
  
-		              
-           			 }
-           			}
-           			@media screen and (min-width: 1000px){   /* width for screen over 1000px */
-        			
-           			 #sidebar, #content{
-		                   
-		          		  color: white;
-		          		  border-color: white;
- 
-		              
-           			 }
-           			}
+                    p::first-letter {
+                        font-size:1.5em;
+                        color: #000;
+                    }
+                
+                    }
+                    @media screen and (min-width: 1000px){   /* width for screen over 1000px */
+                    
+                     #sidebar, #content{
+                           
+                          color: white;
+                          border-color: white;
+                    }
+
+                    p::first-line {
+                        font-size:1.5em;
+                    } 
+
+                    p::first-letter {
+                        font-size:1.5em;
+                        color: #000;
+                    }
+                     
+                    }
+
 
 	</style>
 
@@ -156,7 +174,7 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <img src="arrow.png" alt="Link To Top">
+        <img src="img/arrow.png" alt="Link To Top">
         </div>
         <div class="footer">
         <h4>Footer</h4>	
