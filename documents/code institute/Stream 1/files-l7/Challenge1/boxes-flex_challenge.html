@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+			body{
+				font-family: roboto;
+			}
+		
+			#container
+			{
+				margin-right:auto; 
+				margin-left:auto;
+				height: 600px;
+				background-color:#AA4639;
+				border-radius: 10px;
+				padding: 10px;
+				font-size: 0;	/* remove inline-block spacing*/
+				display: flex;
+				flex-flow: row wrap;
+				align-items: stretch;
+				justify-content: center;
+			}
+			.box1{
+				width: 150px;
+				flex: 1;
+				order: 2;
+				text-align: center;
+				background-color: #81BBC9;
+				margin:5px;
+				border-radius:10px;
+				font-size: 35px;
+			}
+
+			.box2{
+				width: 150px;
+				flex: 1;
+				order: 3;
+				text-align: center;
+				background-color: #81BBC9;
+				margin:5px;
+				border-radius:10px;
+				font-size: 35px;
+			}
+            
+            .box3{
+				width: 150px;
+				flex: 1;
+				order: 4;
+				text-align: center;
+				background-color: #81BBC9;
+				margin:5px;
+				border-radius:10px;
+				font-size: 35px;
+			}
+
+			.box4{
+				width: 150px;
+				flex: 4;
+				order: 1;
+				text-align: center;
+				background-color: #81BBC9;
+				margin:5px;
+				border-radius:10px;
+				font-size: 35px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+			<div class="box1"><h2>1</h2></div>
+			<div class="box2"><h2>2</h2></div>
+			<div class="box3"><h2>3</h2></div>
+			<div class="box4"><h2>4</h2></div>
+
+
+		</div>
+	</body>
+</html>
