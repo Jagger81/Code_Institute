@@ -41,6 +41,12 @@
             padding: 6px 8px;
             margin-bottom: 15px;
          }
+
+         input:focus {
+             background-color: rgba(0,0,0,0.1);
+
+         }
+
          .field{
             padding: 6px 8px;
          }
@@ -57,13 +63,12 @@
             border-radius: 20px;
             clear: both;
             padding: 20px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             background-color:rgba(129, 187, 201,.2);
-
-         }
 
          
          }
+
       </style>
    </head>
    <body>
@@ -97,13 +102,32 @@
                 <label for="age" class="field">Age:</label>
                 <input id="age" name="age" placeholder="Please Enter Your Age (must be over 18)" title="Age must be greater or equal to 18" type ="number" min="18" max="150" />
 
+                <label for="date" class="field">Date:</label>
+                <input id="date" name="date" placeholder="Please Enter Today's Date" type ="date" />
+
                 <label for="website" class ="field">Website:</label>
                 <input id="website" name="website" placeholder="enter full url" type="url" />
+      
+      </fieldset>
 
-                <label for="submit" class="field"></label> <!-- no label required for the submit, but was the easiest way to keep the input type aligned-->
+      <fieldset>
+      	
+                <legend>Would you like:</legend>
+      	        <input type="checkbox" value="Saphire"/>Saphire
+                <input type="checkbox" value="Jade"/>Jade
+                <input type="checkbox" value="Quartz"/>Quartz
+                <input type="checkbox" value="Emerald"/>Emerald
+                <input type="checkbox" value="Ruby"/>Ruby<br>
+
+                <input type="radio" name="gender" value="Male"/>Male
+                <input type="radio" name="gender" value="Female"/>Female
+                <input type="radio" name="gender" value="Other"/>Other
+
+                <label for="submit"></label> <!-- no label required for the submit, but was the easiest way to keep the input type aligned-->
                 <input id="submit" type="submit" value="submit"/>
       
       </fieldset>      
+      
       </form>
         
     </div>
