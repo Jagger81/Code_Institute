@@ -8,6 +8,8 @@
 		
 		.container{
 			font-family: calibri;
+			font-size: 16px;
+			margin-bottom: 50px;
 		}
 
         h1{
@@ -17,22 +19,50 @@
         	color: darkgray;
         }
 
+        form{
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+        	text-align: center;
+
+        }
+
 
 	</style>
 
 </head>
 <body>
-<h1 align="center">Hello! This Is BootStrap</h1>
+<h1 align="center">Hello! This Is BootStrap</h1><br>
 <script source='http://code.jquert.com/jquery.min.js'></script>
 <script source='bootstrap/js/bootstrap.min.js'></script>
 
 <div class="container">
+    
+     <hr>
+     <form class="form-inline">
+       <div class="form-group">
+       <label class="sr-only" for="exampleInputEmail3">Email address</label>
+       <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+        </div>
+     <div class="form-group">
+       <label class="sr-only" for="exampleInputPassword3">Password</label>
+       <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+     </div>
+     <div class="checkbox">
+       <label>
+       <input type="checkbox"> Remember me
+       </label>
+     </div>
+       <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+    <hr>
+       
+
     <div class="row">
        <div class="col-sm-4">
        <h2>HTML</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       quis nostrud exercitation <kbd>ullamco</kbd> laboris nisi ut aliquip ex ea commodo
        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
