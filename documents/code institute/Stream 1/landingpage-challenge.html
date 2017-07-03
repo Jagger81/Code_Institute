@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Landing Page</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet" type="text/css">
+
+		
+		<style type="text/css">
+        /* -------------------------Navigation ----------------------------*/
+		body{
+            background-color: #F5D76E; 
+		}
+
+		nav{
+			font-family: Roboto;
+			margin: 30px auto;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px;
+			text-align: center;
+			font-size: 40px;
+			border-bottom: 1px solid white;
+
+		}
+		#logoNav{
+			font-size: 40px;
+			font-weight: bold;
+			}
+
+		/* -------------------------Landing --------------------------------*/
+		#landing{
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			#landing-msg{
+				text-align: center;
+				font-size: 50px;
+				font-family: Vibur;
+				margin: 50px 20px;
+			}
+
+			#landing-img{
+				
+			}
+
+
+    /* ------------------------- Cards --------------------------------*/
+		
+	.cards{
+			display: flex;
+			flex-flow: column;
+            justify-content: space-around;
+            
+        }
+
+        .card{
+            flex: 1;
+            padding: 20px;
+            margin: 40px 20px;
+            background-color: #ddd;
+        }
+
+        .card h2{
+            font-family: Dosis;
+        }
+
+        .card img{
+            width:100%;
+        }
+
+        .card p{
+            font-family: Roboto;
+            font-size: 20px;
+        }
+
+
+        /* ----------------------media query---------------------------------*/
+		@media screen and (min-width: 700px){
+			
+			nav{
+			width:90%;  /*----width is important for good positioning on page-----*/	
+			display: flex;
+			flex-flow: row;
+			align-items: baseline;
+			}
+			
+			a{
+			font-size: 25px;
+			border: none;
+			
+			}
+			
+			#logoNav{
+			flex: 6;
+			font-size: 40px;
+			text-align: left;
+			}
+
+
+			#landing{
+			display: flex;
+			flex-flow: row nowrap; /*----ensure nowrap is used here------*/
+			width: 80%;
+			margin: 10px auto;
+			}
+
+			.cards{
+			display: flex;
+			flex-flow: row nowrap; /*----ensure nowrap is used here------*/
+
+			}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+
+	</nav>
+
+	<div id="landing">
+        <div id="landing-msg">
+           <h1>Make Creative Clever Fun Apps. Simple.</h1>
+        </div>
+        <div id="landing-img">
+           <img src="img/laptop.png" alt="Image Of Laptop" width="400"> <!-- not sure if a div id is required inside here -->
+        </div>   
+	</div>
+
+
+	<section class="cards">
+        <div class="card">
+                <img src="img/graphic1.png" alt="design pic">
+                <h2>Web Info Sessions</h2>
+                <p>If you have questions about your career in...</p>
+        </div> 
+    
+        <div class="card">
+                <img src="img/graphic2.png" alt="design pic">
+                <h2>Web Info Sessions</h2>
+                <p>If you have questions about your career in...</p>
+        </div> 
+    
+        <div class="card">
+                <img src="img/graphic3.png" alt="design pic">
+                <h2>Web Info Sessions</h2>
+                <p>If you have questions about your career in...</p>
+        </div> 
+    </section>
+
+
+</body>
+</html>

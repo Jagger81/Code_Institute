@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+            color: darkblue;
+         }
+            
+         label.field{
+            display: block;
+            text-align: left;
+            width: 100px;
+            float: left;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin-bottom: 15px;
+         }
+
+         input:focus {
+             background-color: rgba(0,0,0,0.1);
+
+         }
+
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 50px;
+            background-color:rgba(129, 187, 201,.2);
+
+         
+         }
+
+      </style>
+   </head>
+   <body>
+      <div id="container">
+
+      <form>
+        <fieldset>
+        	<legend>Registration</legend>
+
+      	        <label for="fname" class="field">Username:</label>
+                <input type="text" id="fname" autocomplete="on" required="" placeholder="required field" name="fname"/>
+
+                <label for="password" class ="field">Password:</label>
+                <input id="password" name="password" required="" placeholder="enter password" type="password" />
+
+                <label for="email" class ="field">Email:</label>
+                <input id="email" name="email" required="" autofocus title="Email must follow this format: test@test.com" placeholder="enter email" type="email" />
+
+                <label for="passport" class ="field">Passport:</label>
+                <input id="telephone" name="passport" pattern="[A-Z]{3}[0-9]{6}" title="Must Be 3 CAPITAL Letters, followed by 6 digits" placeholder="passport format only" type="text" />
+
+                <label for="telephone" class ="field">Mobile No:</label>
+                <input id="telephone" name="telephone" pattern="[0-9]{6}" placeholder="digits only" type="number" />
+
+                <label for="postcode" class ="field">Eircode:</label>
+                <input id="postcode" name="postcode" pattern="[0-9A-za-z]{7}" title="Eircode should start with a number, followed by a combination of 6 letters/neumbers" placeholder="Please Enter Your Eircode" type="text" />
+
+                <label for="creditcard" class="field">Credit Card:</label>
+                <input id="creditcard" name="creditcard" placeholder="credit card number (16 digits)" pattern ="[0-9]{16}" title="Credit Card Number Should Be 16 Digits Long" type ="text"/>
+
+                <label for="age" class="field">Age:</label>
+                <input id="age" name="age" placeholder="Please Enter Your Age (must be over 18)" title="Age must be greater or equal to 18" type ="number" min="18" max="150" />
+
+                <label for="date" class="field">Date:</label>
+                <input id="date" name="date" placeholder="Please Enter Today's Date" type ="date" />
+
+                <label for="website" class ="field">Website:</label>
+                <input id="website" name="website" placeholder="enter full url" type="url" />
+      
+      </fieldset>
+
+      <fieldset>
+      	
+                <legend>Would you like:</legend>
+      	        <input type="checkbox" value="Saphire"/>Saphire
+                <input type="checkbox" value="Jade"/>Jade
+                <input type="checkbox" value="Quartz"/>Quartz
+                <input type="checkbox" value="Emerald"/>Emerald
+                <input type="checkbox" value="Ruby"/>Ruby<br>
+
+                <input type="radio" name="gender" value="Male"/>Male
+                <input type="radio" name="gender" value="Female"/>Female
+                <input type="radio" name="gender" value="Other"/>Other
+
+                <label for="submit"></label> <!-- no label required for the submit, but was the easiest way to keep the input type aligned-->
+                <input id="submit" type="submit" value="submit"/>
+      
+      </fieldset>      
+      
+      </form>
+        
+    </div>
+   </body>
+
+</html>

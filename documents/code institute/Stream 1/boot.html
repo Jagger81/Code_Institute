@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Basic Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		
+		.container{
+			font-family: calibri;
+			font-size: 16px;
+			margin-bottom: 50px;
+		}
+
+        h1{
+        	font-family: calibri;
+        	font-size: 48px;
+        	font-weight: bold;
+        	color: darkgray;
+        	text-align: center;
+        }
+
+        h2{
+        	text-align: center;
+
+        }
+
+        form{
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+        	text-align: center;
+
+        }
+
+        nav{
+        	padding-left: 80px;
+        }
+
+        body{
+        	padding: 50px;
+        }
+        
+	</style>
+
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+   
+   <div class="navbar-header">
+    <a class="navbar-brand" href="#">CHOCOBLOCK</a>
+    <img alt="Brand" src="img/laptop.png" height="30" weight="30" align="bottom">
+    <ul class="nav navbar-nav navbar-right">
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Portfolio</a></li>
+     <li><a href="#">Blog</a></li>
+     <li><a href="#">Contact</a></li>
+     </ul>
+   </div>
+</nav>
+</div>
+
+<h1>Hello! This Is BootStrap</h1><br>
+
+<div class="container">
+    
+     <hr>
+     <form class="form-inline">
+       <div class="form-group">
+       <label class="sr-only" for="exampleInputEmail3">Email address</label>
+       <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+        </div>
+     <div class="form-group">
+       <label class="sr-only" for="exampleInputPassword3">Password</label>
+       <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+     </div>
+     <div class="checkbox">
+       <label>
+       <input type="checkbox"> Remember me
+       </label>
+     </div>
+       <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+    <hr>
+       
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+      Panel content
+    </div>
+    </div>
+    <hr>
+
+
+    <div class="row">
+       <div class="col-sm-4">
+       <h2>HTML</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation <kbd>ullamco</kbd> laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-success btn-lg">Learn</a>
+       </div>
+
+       <div class="col-sm-4">
+       <h2>CSS</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-primary btn-default">Learn</a>
+       </div>
+
+       <div class="col-sm-4">
+       <h2>Bootstrap</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-danger btn-sm">Learn</a>
+       </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+       <div class="col-sm-4">
+       <!--need to confirm if this is best practice?-->
+       </div>
+
+       <div class="col-sm-4">
+       <h2>Bootstrap List Group</h2>
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+	        <span class="glyphicon glyphicon-star-empty"></span> Stars
+	        <span class="badge">56</span>
+          </a>
+          <a href="#" class="list-group-item active">
+            <span class="glyphicon glyphicon-music"></span> Songs
+            <span class="badge">145</span>
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="glyphicon glyphicon-camera"></span> Photos
+            <span class="badge">337</span>
+          </a>
+          <a href="#" class="list-group-item ">
+	        <span class="glyphicon glyphicon-comment"></span> Comments
+	        <span class="badge">112</span>
+          </a>
+       </div>
+       </div>
+
+       <div class="col-sm-4">
+       <!--need to confirm if this is best practice?-->
+       </div>
+
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+       <div class="col-sm-3">
+       <h2>Javascript</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+
+
+       <div class="col-sm-3">
+       <h2>Python</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+       
+
+       <div class="col-sm-3">
+       <h2>Django</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+
+       <div class="col-sm-3">
+       <h2>Github</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+       </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+       <div class="col-sm-6">
+       <h2>SQL</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+
+       <div class="col-sm-6">
+       <h2>FTP</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+
+    </div>
+
+
+       <hr>
+
+    <div class="row">
+       <div class="col-sm-12">
+       <h2>Full-Stack Development</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+
+    </div>
+
+
+</div>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
