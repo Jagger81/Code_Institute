@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Basic Bootstrap</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<style type="text/css">
@@ -9,7 +10,7 @@
 		.container{
 			font-family: calibri;
 			font-size: 16px;
-			margin-bottom: 50px;
+			margin-bottom: 10px;
 		}
 
         h1{
@@ -32,66 +33,95 @@
 
         }
 
-        nav{
-        	padding-left: 80px;
-        }
-
         body{
-        	padding: 50px;
+        	padding: 70px;
         }
 
+        
+        footer{
+          padding-top: 5px;
+          background-color: #eee;
+          text-align: center;
+          height: 100px;
+        }
 
+        img{
+        	margin-top: 10px;
+        }
 
+        .nav{
+        	font-size: 20px;
+        }
+
+        .navbar-brand{
+        	font-size: 28px;
+        }
+
+             
 	</style>
-
 </head>
 <body>
-<div class="container">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-   
-   <div class="navbar-header">
-    <a class="navbar-brand" href="#">CHOCOBLOCK</a>
-    <img alt="Brand" src="img/laptop.png" height="30" width="40">
-    <ul class="nav navbar-nav navbar-right">
-     <li><a href="#">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Portfolio</a></li>
-     <li><a href="#">Blog</a></li>
-     <li><a href="#">Contact</a></li>
-     </ul>
-   </div>
+<!--change nav color-->
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+         <div class="nav navbar-header">
+            <a class="navbar-brand" href="#">CHOCOBLOCK</a>
+            <img class="hidden-xs" alt="Brand" src="img/laptop.png" height="30" width="40"> 
+            <!--add button and set class navbar-toggle and collapsed to create menu-->
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#myCollapsingList">
+            <!--creates collapsed menu icon appearance-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+        </div>
+            <!--the id here is used to link to the button -->
+            <ul id="myCollapsingList"
+                class="nav navbar-nav collapse navbar-collapse navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+     </div>   
 </nav>
-</div>
+
 
 <h1>Hello! This Is BootStrap</h1><br>
 
 <div class="container">
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
+     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+     <!-- Indicators -->
+        <ol class="carousel-indicators">
+             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+<div class="carousel-inner" role="listbox">
 
-    <div class="item active">
-      <img src="img/bstrap.png" alt="Bootstrap Logo">
-      <div class="carousel-caption">
+     <div class="item active">
+             <img src="img/bstrap.png" alt="Bootstrap Logo">
+      
+     <div class="carousel-caption">
         
-      </div>
-    </div>
+     </div>
+     </div>
 
-    <div class="item">
-      <img src="img/graphic2-car.png" alt="laptop">
-      <div class="carousel-caption">
+     <div class="item">
+       <img src="img/graphic2-car.png" alt="laptop">
+       <div class="carousel-caption">
         
-      </div>
-    </div>
+       </div>
+     </div>
     
     <div class="item">
       <img src="img/graphic1-car.png" alt="laptop">
@@ -107,17 +137,27 @@
       </div>
     </div>
 
-  </div>
+</div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+     <!-- Controls -->
+     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+     </a>
+     
+     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+     </a>
+</div>
+<hr>
+
+<div class="jumbotron">
+   <div class="container">
+     <h1>My Jumbotron!!!</h1>
+     <p>A lightweight, flexible component... </p>
+     <p><a class="btn btn-primary btn-lg" href="#">Learn more</a></p>
+   </div>
 </div>
     
      <hr>
@@ -386,6 +426,11 @@
     </div>
 
 </div>
+
+<footer class="col-12">
+      <h2>Footer</h2>
+      <p>Copyright</p>
+</footer>
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
